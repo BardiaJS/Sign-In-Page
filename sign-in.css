@@ -1,0 +1,369 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    color: #130a8f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Amiri', serif;
+
+}
+input , button{
+    font-family: inherit;
+}
+#passwrod-label{
+    position: relative;
+    float: right;
+}
+
+
+
+
+
+.container{
+    background-color: #f1f1f1;
+    padding: 1.25rem;
+    margin: 1.25rem; 
+    max-width: 700px;
+    width: 90%;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem rgb(0, 0, 0 , 0.5);
+}
+
+.container form h1{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.container form .form-inner{
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    /* margin-top: 1.25rem; */
+
+}
+
+.container form .form-inner article{
+    margin-top: 1.25rem;
+}
+
+.form-inner{
+    justify-content: center;
+    font-family: 'Amiri', serif;
+
+}
+
+.input-text{
+    text-align: right;
+    font-family: 'Amiri', serif;
+
+}
+
+.input-answer{
+    text-align: right;
+    font-family: 'Amiri', serif;
+
+}
+
+
+
+
+
+
+
+
+.container form label{
+    display: block;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.container form input{
+    border-width: 2px ;
+    border-style: solid;
+    border-color: #130a8f;
+    border-radius: 0.625rem;
+    outline: none;
+    padding: 0.625rem 1.25rem;
+    width: 100%;
+}
+
+.container form input:focus{
+    border-color: #3f3d56;
+}
+
+
+
+.container form .btn{
+    color: #fff;
+    padding: 0.625rem 3rem;
+    font-size: 1rem;
+    background-color: #130a8f;
+    margin-top: 1.25rem;
+    border: none;
+    outline: none;
+    border-radius: 0.625rem;
+    transition: opacity 0.2s ease all;
+}
+
+.container form .btn:hover{
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+
+.checkbox{
+    display: none;
+
+}
+
+.checkboxes{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 2rem;
+}
+.label{
+    position: relative;
+    background-color: #bfddc477;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    /* padding: 1.25rem; */
+    margin: 0 1.25rem 0 0 ;
+    width: 50px;
+    height: 26px;
+    cursor: pointer;
+}
+
+
+.ball{
+    background-color: #3f3d56;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    transition: transform 0.15s linear;
+}
+
+.checkbox:checked + .label .ball{
+    transform: translateX(24px);
+}
+.btn-class{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Amiri', serif;
+
+}
+.ending{
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+
+
+@media(min-width: 576px){
+    .container{
+        margin: 1.25rem auto;
+        padding: 2rem;
+    }
+
+    .container form .form-inner{
+        flex-direction: row;
+    }
+
+    
+
+}
+
+
+@media(max-width: 576px){
+ 
+    
+    
+    body{
+        color: #130a8f;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        font-family: 'Amiri', serif;
+    
+    }
+    input , button{
+        font-family: inherit;
+    }
+    #passwrod-label{
+        position: relative;
+        float: right;
+    }
+    
+    
+    
+    
+    
+    .container{
+        background-color: #f1f1f1;
+        padding: 1.25rem;
+        margin: 1.25rem; 
+        max-width: 700px;
+        width: 90%;
+        border-radius: 1rem;
+        box-shadow: 0.2rem 0.2rem 0.2rem rgb(0, 0, 0 , 0.5);
+    }
+    
+    .container form h1{
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .container form .form-inner{
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+        /* margin-top: 1.25rem; */
+    
+    }
+    
+    .container form .form-inner article{
+        margin-top: 1.25rem;
+    }
+    
+    .form-inner{
+        justify-content: center;
+        font-family: 'Amiri', serif;
+    
+    }
+    
+    .input-text{
+        text-align: right;
+        font-family: 'Amiri', serif;
+    
+    }
+    
+    .input-answer{
+        text-align: right;
+        font-family: 'Amiri', serif;
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    .container form label{
+        display: block;
+        font-weight: bold;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        margin-bottom: 0.2rem;
+    }
+    
+    .container form input{
+        border-width: 2px ;
+        border-style: solid;
+        border-color: #130a8f;
+        border-radius: 0.625rem;
+        outline: none;
+        padding: 0.625rem 1.25rem;
+        width: 100%;
+    }
+    
+    .container form input:focus{
+        border-color: #3f3d56;
+    }
+    
+    
+    
+    .container form .btn{
+        color: #fff;
+        padding: 0.625rem 3rem;
+        font-size: 1rem;
+        background-color: #130a8f;
+        margin-top: 1.25rem;
+        border: none;
+        outline: none;
+        border-radius: 0.625rem;
+        transition: opacity 0.2s ease all;
+    }
+    
+    .container form .btn:hover{
+        cursor: pointer;
+        opacity: 0.75;
+    }
+    
+    
+    .checkbox{
+        display: none;
+    
+    }
+    
+    .checkboxes{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-top: 2rem;
+    }
+    .label{
+        position: relative;
+        background-color: #bfddc477;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        /* padding: 1.25rem; */
+        margin: 0 1.25rem 0 0 ;
+        width: 50px;
+        height: 26px;
+        cursor: pointer;
+    }
+    
+    
+    .ball{
+        background-color: #3f3d56;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        border-radius: 50%;
+        width: 22px;
+        height: 22px;
+        transition: transform 0.15s linear;
+    }
+    
+    .checkbox:checked + .label .ball{
+        transform: translateX(24px);
+    }
+    .btn-class{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        font-family: 'Amiri', serif;
+    
+    }
+    .ending{
+        text-align: center;
+        margin-top: 10px;
+    }
+
+}
